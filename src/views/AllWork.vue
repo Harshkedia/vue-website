@@ -1,10 +1,18 @@
 <template>
-  <div class="projects">
-    <ProjectItem
-      v-for="project in projects"
-      :key="project.name"
-      :project="project"
-    />
+  <div>
+    <v-container fluid class="project-list">
+      <v-row>
+        <v-col cols="12">
+          <v-row :align="alignment" :justify="justify"> 
+          <ProjectItem class="project-item"
+            v-for="project in projects"
+            :key="project.name"
+            :project="project"
+          />
+        </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
   </div>
 </template>
 
@@ -20,20 +28,18 @@
     },
     data() {
       return {
-        projects: store.projects
+        projects: store.projects,
+        alignment: "start",
+        justify: "start"
       };
     }
   };
 </script>
 
 <style scoped>
-  .projects {
-    display: grid;
-    position: absolute;
-    margin-left: 350px;
-    margin-top: 30px;
-    grid-row-gap: 75px;
-    grid-column-gap: 75px;
-    grid-template-columns: 250px 250px 250px;
-  }
+
+.project-list{
+  margin-top: -15em;
+  margin-left: 25em;
+}
 </style>

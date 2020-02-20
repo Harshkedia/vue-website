@@ -8,7 +8,7 @@ export default {
     {
       name: "Archaeology of CAD",
       description:
-        "Software reconstruction of early computer-aided design systems",
+        "Software reconstruction of design systems",
       image: "archaeology.gif"
     }
   ]
