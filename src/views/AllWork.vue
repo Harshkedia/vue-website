@@ -39,7 +39,7 @@
 <style scoped>
 
 .project-list{
-  margin-top: -15em;
-  margin-left: 25em;
+  margin-top: -28em;
+  margin-left: 20em;
 }
 </style>

@@ -25,12 +25,20 @@
     padding: 2em;
     text-decoration: none;
   }
+
   .project-image {
     width: 15em;
     height: 15em;
     object-fit: cover;
     border-radius: 200px;
     align-self: auto;
+  }
+
+  .project-image:hover{
+    border-style: solid;
+    border-width: .5em;
+    border-color: red;
+    box-sizing: border-box;
   }
 
   .project-title {

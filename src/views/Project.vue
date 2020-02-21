@@ -1,17 +1,28 @@
 <template>
   <div class="project">
-    <h2 class="project-title">{{project.name}}</h2>
-    <h2 class="project-subtitle">{{project.description}}</h2>
+    <div class="title">
+      <div class="project-title">{{project.name}}</div>
+      <div class="project-subtitle">{{project.description}}</div>
+      <br>
+      <div class="description">
+        <b>When</b>: {{project.when}} <br>
+        <Collaborators :collaborators="project.with"></Collaborators>
+        <b>Role</b>: {{project.role}} <br>
+        <b>What</b>: {{project.what}} <br>
+      </div>
+    </div>   
   </div>
 </template>
 
 <script>
 // @ is an alias to /src
 import store from '@/store.js'
+import Collaborators from '@/components/Collaborators.vue'
 
 export default {
   name: 'Project',
   components: {
+    Collaborators
   },
   data (){
     return {
@@ -29,32 +40,26 @@ export default {
 </script>
 
 <style scoped>
-.project {
-  display: grid;
-  position: absolute;
-  margin-left: 350px;
-  margin-top: 60px;
-  grid-column-gap: 50px;
-  grid-template-columns: 450px 450px;
-  justify-content: left;  
-  align-items: center;
-  background-color: white;
+
+.title{
+  margin-left: 18em;
+  margin-top: -20em;
 }
 
 .project-title{
-  position: absolute;
-  float: left;
-  font-size: 18pt;
-  font-weight: normal;
-  color: black;
+  color:black;
+  font-size: 1.5em;
 }
 
 .project-subtitle{
-  position: absolute;
-  margin-top: 4em;
-  float: left;
-  font-size: 10pt;
   color: gray;
-  font-weight: normal;
+  font-size: .8em;
+}
+
+.description{
+  color: black;
+  font-size: .75em;
+  margin-right: 5em;
+  text-decoration: none;
 }
 </style>
