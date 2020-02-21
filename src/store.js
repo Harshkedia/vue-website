@@ -63,6 +63,11 @@ export default {
       description: "The eyes of the skin",
       image: "bath-house.jpg"
     },
+    {
+      name: "Augmented Sound",
+      description: "Sound Based AR App",
+      image: "sound.png"
+    }
 
   ]
 };
