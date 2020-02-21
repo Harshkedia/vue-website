@@ -27,6 +27,42 @@ export default {
       name: "Archaeology of CAD",
       description: "Software reconstruction of design systems",
       image: "archaeology.gif"
-    }
+    },
+    {
+      name: "Design Computing",
+      description: "Computation for Architecture",
+      image: "fire-escape.gif"
+    },
+    {
+      name: "Beard of Boids",
+      description: "A rather determined flock of beard hairs",
+      image: "beard-of-boids.gif"
+    },
+    {
+      name: "Linguistic Clock",
+      description: "Just try reading the time",
+      image: "clock.gif"
+    },
+    {
+      name: "Low Relief",
+      description: "A digital approach to plaster",
+      image: "plaster.gif"
+    },
+    {
+      name: "Ecological Housing",
+      description: "Housing for the 22nd century",
+      image: "eco-machine.jpg"
+    },
+    {
+      name: "Regal Shoe Store",
+      description: "A parametric take on retail",
+      image: "regal.jpg"
+    },
+    {
+      name: "Bath House",
+      description: "The eyes of the skin",
+      image: "bath-house.jpg"
+    },
+
   ]
 };

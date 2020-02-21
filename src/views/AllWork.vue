@@ -2,7 +2,7 @@
   <div>
     <v-container fluid class="project-list">
       <v-row>
-        <v-col cols="12">
+        <v-col cols="10">
           <v-row :align="alignment" :justify="justify"> 
           <ProjectItem class="project-item"
             v-for="project in projects"
