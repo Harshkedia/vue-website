@@ -6,12 +6,12 @@
 
 <script>
 // @ is an alias to /src
-import TextViewer from '@/components/TextViewer.vue'
+import TextViewer from "@/components/TextViewer.vue";
 
 export default {
-  name: 'Home',
+  name: "Home",
   components: {
     TextViewer
-  },
-}
+  }
+};
 </script>
